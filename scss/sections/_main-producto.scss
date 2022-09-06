@@ -1,0 +1,439 @@
+.main{
+    &__producto{
+        background-image:url(../../assets/img/abstract-background-blue.jpg);
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+        "productoUno productoDos"
+        "productoTres productoCuatro"
+        "productoCinco productoSeis"
+        "productoSiete productoOcho"
+        ;
+        grid-area: main;
+        img{
+            width: 150px;
+            height: 150px;
+        }
+        p{
+            font-family: $poppins;
+            color: black;
+            font-size: 15px;
+        }  
+        &__uno{
+           display: flex;
+           flex-direction: column;
+           grid-area: productoUno;
+           align-items: center;
+           padding-top: 15px;
+           padding-bottom: 15px;
+        }  
+        &__dos{
+            display: flex;
+            flex-direction: column;
+            grid-area: productoDos;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        &__tres{
+            display: flex;
+            flex-direction: column;
+            grid-area: productoTres;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        &__cuatro{
+            display: flex;
+            flex-direction: column;
+            grid-area: productoCuatro;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        &__cinco{
+            display: flex;
+            flex-direction: column;
+            grid-area: productoCinco;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        &__seis{
+            display: flex;
+            flex-direction: column;
+            grid-area: productoSeis;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        &__siete{
+            display: flex;
+            flex-direction: column;
+            grid-area: productoSiete;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        &__ocho{
+            display: flex;
+            flex-direction: column;
+            grid-area: productoOcho;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .btn{
+            width: 70px;
+            height: 30px;
+            font-size: 12px;
+            border-radius: 7px;
+            background-color: $ruby;
+            &:hover{
+                background-color: $azul;
+            }
+            a{
+                font-family: $poppins;
+                color: white;
+                font-size: 12px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){
+   .main{
+        &__producto{
+            img{
+                width: 250px;
+                height: 250px;
+            }
+            p{
+                font-size: 20px;
+            }
+            .btn{
+                width: 80px;
+                height: 40px;
+                a{
+                    font-size: 15px;
+                }
+            }
+            
+        }
+   }
+}
+
+@media (min-width: 1020px){
+    .main{
+        &__producto{
+            background-image:url(../../assets/img/abstract-background-blue.jpg);
+            display: grid;
+            grid-template-columns: repeat(5, auto);
+            grid-template-rows: repeat(4, auto);
+            grid-template-areas: 
+            "productoUno productoUno productoDos productoCuatro productoCuatro"
+            "productoUno productoUno productoTres productoCuatro productoCuatro"
+            "productoCinco productoSiete productoSiete productoOcho productoOcho"
+            "productoSeis productoSiete productoSiete productoOcho productoOcho"
+            ;
+            grid-area: main;
+            width: 1000px;
+            margin: 0 auto;
+            p{
+                font-family: $poppins;
+                font-size: 20px;
+            }  
+            &__uno{
+               display: flex;
+               grid-area: productoUno;
+               align-items: center;
+               justify-content: center;
+               img{
+                width: 300px;
+                height: 300px;
+               }
+            
+            }  
+            &__dos{
+                display: flex;
+                flex-direction: column;
+                grid-area: productoDos;
+                align-items: center;
+                justify-content: center;
+                img{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+            &__tres{
+                display: flex;
+                flex-direction: column;
+                grid-area: productoTres;
+                align-items: center;
+                justify-content: center;
+                img{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+            &__cuatro{
+                display: flex;
+                flex-direction: column;
+                grid-area: productoCuatro;
+                align-items: center;
+                justify-content: center;
+                img{
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+            &__cinco{
+                display: flex;
+                flex-direction: column;
+                grid-area: productoCinco;
+                align-items: center;
+                justify-content: center;
+                img{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+            &__seis{
+                display: flex;
+                flex-direction: column;
+                grid-area: productoSeis;
+                align-items: center;
+                justify-content: center;
+                img{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+            &__siete{
+                display: flex;
+                flex-direction: column;
+                grid-area: productoSiete;
+                align-items: center;
+                justify-content: center;
+               img{
+                width: 300px;
+                height: 300px;
+               }
+            }
+            &__ocho{
+                display: flex;
+                flex-direction: column;
+                grid-area: productoOcho;
+                align-items: center;
+                justify-content: center;
+                img{
+                    width: 300px;
+                    height: 300px;
+                   }
+            }
+            .btn{
+                width: 90px;
+                height: 40px;
+            }
+        }
+    }
+}
+@media (min-width: 1280px){
+    .main{
+        &__producto{
+            width: 1100px;
+
+            &__uno{
+                img{
+                    width: 350px;
+                    height: 350px;
+                }
+            }  
+            &__dos{
+                img{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+            &__tres{
+                img{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+            &__cuatro{
+                img{
+                    width: 350px;
+                    height: 350px;
+                }
+            }
+            &__cinco{
+                img{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+            &__seis{
+                img{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+            &__siete{
+                img{
+                    width: 350px;
+                    height: 350px;
+                }
+            }
+            &__ocho{
+                img{
+                    width: 350px;
+                    height: 350px;
+                }
+            }
+            .btn{
+                width: 120px;
+                height: 50px;
+                a{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1600px){
+    .main{
+        &__producto{
+            width: 1400px;
+            
+            p{
+                font-size: 30px;
+            }
+            &__uno{
+                img{
+                    width: 400px;
+                    height: 400px;
+                }
+            }  
+            &__dos{
+                img{
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+            &__tres{
+                img{
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+            &__cuatro{
+                img{
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+            &__cinco{
+                img{
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+            &__seis{
+                img{
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+            &__siete{
+                img{
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+            &__ocho{
+                img{
+                    width: 400px;
+                    height: 400px;
+                }
+            }
+            .btn{
+                width: 150px;
+                height: 70px;
+                a{
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1980px){
+    .main{
+        &__producto{
+            width: 1750px;
+            p{
+                font-size: 33px;
+            }
+            &__uno{
+                img{
+                    width: 500px;
+                    height: 500px;
+                }
+            }  
+            &__dos{
+                img{
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+            &__tres{
+                img{
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+            &__cuatro{
+                img{
+                    width: 500px;
+                    height: 500px;
+                }
+            }
+            &__cinco{
+                img{
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+            &__seis{
+                img{
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+            &__siete{
+                img{
+                    width: 500px;
+                    height: 500px;
+                }
+            }
+            &__ocho{
+                img{
+                    width: 500px;
+                    height: 500px;
+                }
+            }
+            .btn{
+                width: 170px;
+                height: 80px;
+                a{
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+

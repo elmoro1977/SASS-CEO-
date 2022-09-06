@@ -1,0 +1,177 @@
+.main {
+  &__galeria {
+    &__uno {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+      p {
+        font-family: $poppins;
+        font-size: 20px;
+        color: black;
+      }
+    }
+    &__dos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+      p {
+        font-family: $poppins;
+        font-size: 20px;
+        color: black;
+      }
+    }
+    &__tres {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+      p {
+        font-family: $poppins;
+        font-size: 20px;
+        color: black;
+      }
+    }
+    &__cuatro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+      p {
+        font-family: $poppins;
+        font-size: 20px;
+        color: black;
+      }
+    }
+    &__cinco {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+      p {
+        font-family: $poppins;
+        font-size: 20px;
+        color: black;
+      }
+    }
+    &__seis {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px;
+      p {
+        font-family: $poppins;
+        font-size: 20px;
+        color: black;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px){
+    .main{
+        &__galeria{
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(3, auto);
+            grid-template-areas: 
+            "videoUno videoDos"
+            "videoTres videoCuatro"
+            "videoCinco videoSeis"
+            ;
+            grid-area: main;
+            &__uno{
+                grid-area: videoUno;
+            }
+            &__dos{
+                grid-area: videoDos;
+            }
+            &__tres{
+                grid-area: videoTres;
+            }
+            &__cuatro{
+                grid-area: videoCuatro;
+            }
+            &__cinco{
+                grid-area: videoCinco;
+            }
+            &__seis{
+                grid-area: videoSeis;
+            }
+
+        }
+    }
+}
+
+@media (min-width: 1020px){
+    .main{
+        &__galeria{
+            width: 900px;
+            margin: 0 auto;
+            p{
+                font-size: 25px;
+            }
+            iframe{
+                width: 400px;
+                height: 200px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1600px){
+    .main{
+        &__galeria{
+            width: 1500px;
+            iframe{
+                width: 400px;
+                height: 250px;
+            }
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: repeat(2, auto);
+            grid-template-areas: 
+            "videoUno videoDos videoTres"
+            "videoCuatro videoCinco videoSeis"
+            ;
+
+            grid-area: main;
+            &__uno{
+                grid-area: videoUno;
+            }
+            &__dos{
+                grid-area: videoDos;
+            }
+            &__tres{
+                grid-area: videoTres;
+            }
+            &__cuatro{
+                grid-area: videoCuatro;
+            }
+            &__cinco{
+                grid-area: videoCinco;
+            }
+            &__seis{
+                grid-area: videoSeis;
+            }
+
+        }
+
+    }
+}
+
+@media (min-width: 1980px){
+    .main{
+        &__galeria{
+            width: 1750px;
+            p{
+                font-size: 35px;
+            }
+            iframe{
+                width: 500px;
+                height: 300px;
+            }
+        }
+    }
+}

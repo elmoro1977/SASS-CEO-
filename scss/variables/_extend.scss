@@ -1,0 +1,7 @@
+@mixin estiloTitulo ($size){
+    font-family: $kaushan;
+    font-size: $size;
+    color: $ruby;
+    text-align: center;
+    font-weight: bold;
+}
