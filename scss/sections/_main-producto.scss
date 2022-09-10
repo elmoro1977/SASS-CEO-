@@ -1,6 +1,7 @@
 .main{
     &__producto{
-        background-image:url(../../assets/img/abstract-background-blue.jpg);
+        // background-image:url(../../assets/img/abstract-background-blue.jpg);
+        background-color: cadetblue;
         display: grid;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(4, auto);
@@ -103,6 +104,7 @@
     }
 }
 
+// breackpoint 768px
 @media (min-width: 768px){
    .main{
         &__producto{
@@ -125,10 +127,11 @@
    }
 }
 
+// breackpoint 1020px
 @media (min-width: 1020px){
     .main{
         &__producto{
-            background-image:url(../../assets/img/abstract-background-blue.jpg);
+            // background-image:url(../../assets/img/abstract-background-blue.jpg);
             display: grid;
             grid-template-columns: repeat(5, auto);
             grid-template-rows: repeat(4, auto);
@@ -240,6 +243,8 @@
         }
     }
 }
+
+// breackpoint 1280px
 @media (min-width: 1280px){
     .main{
         &__producto{
@@ -304,6 +309,7 @@
     }
 }
 
+// breackpoint 1600px
 @media (min-width: 1600px){
     .main{
         &__producto{
@@ -371,6 +377,7 @@
     }
 }
 
+// breackpoint 1980px
 @media (min-width: 1980px){
     .main{
         &__producto{

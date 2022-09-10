@@ -14,7 +14,8 @@ body {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
-  grid-template-areas: "sectionOne sectionOne" "sectionTwo sectionTwo";
+  grid-template-areas: "sectionOne sectionOne"
+ "sectionTwo sectionTwo";
   grid-area: main; }
   .main__container__sectionOne {
     display: flex;
@@ -462,7 +463,10 @@ body {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(4, auto);
-  grid-template-areas: "productoUno productoDos" "productoTres productoCuatro" "productoCinco productoSeis" "productoSiete productoOcho";
+  grid-template-areas: "productoUno productoDos"
+ "productoTres productoCuatro"
+ "productoCinco productoSeis"
+ "productoSiete productoOcho";
   grid-area: main; }
   .main__producto img {
     width: 150px;
@@ -559,7 +563,11 @@ body {
     display: grid;
     grid-template-columns: repeat(5, auto);
     grid-template-rows: repeat(4, auto);
-    grid-template-areas: "productoUno productoUno productoDos productoCuatro productoCuatro" "productoUno productoUno productoTres productoCuatro productoCuatro" "productoCinco productoSiete productoSiete productoOcho productoOcho" "productoSeis productoSiete productoSiete productoOcho productoOcho";
+    grid-template-areas: 
+    "productoUno productoUno productoDos productoCuatro productoCuatro"
+    "productoUno productoUno productoTres productoCuatro productoCuatro"
+    "productoCinco productoSiete productoSiete productoOcho productoOcho"
+    "productoSeis productoSiete productoSiete productoOcho productoOcho";
     grid-area: main;
     width: 1000px;
     margin: 0 auto; }
@@ -809,7 +817,9 @@ body {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: "videoUno videoDos" "videoTres videoCuatro" "videoCinco videoSeis";
+    grid-template-areas: "videoUno videoDos"
+ "videoTres videoCuatro"
+ "videoCinco videoSeis";
     grid-area: main; }
     .main__galeria__uno {
       grid-area: videoUno; }
@@ -840,7 +850,8 @@ body {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, auto);
-    grid-template-areas: "videoUno videoDos videoTres" "videoCuatro videoCinco videoSeis";
+    grid-template-areas: "videoUno videoDos videoTres"
+ "videoCuatro videoCinco videoSeis";
     grid-area: main; }
     .main__galeria iframe {
       width: 400px;
@@ -871,7 +882,10 @@ body {
   display: grid;
   grid-template-columns: 1, auto;
   grid-template-rows: 3, auto;
-  grid-template-areas: "chica" "form" "imagen";
+  grid-template-areas: 
+  "chica"
+  "form"
+  "imagen";
   grid-area: main;
   background-image: url(../../assets/img/abstract-background-blue.jpg); }
   .main__contacto p {
@@ -948,7 +962,9 @@ body {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
-    grid-template-areas: "chica imagen" "form imagen";
+    grid-template-areas: 
+    "chica imagen"
+    "form imagen";
     grid-area: main;
     width: 900px;
     margin: 0 auto; }
@@ -1022,7 +1038,10 @@ body {
   display: grid;
   grid-template-columns: 1 auto;
   grid-template-rows: repeat(3, auto);
-  grid-template-areas: "header" "main" "footer"; }
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer"; }
 
 @media (min-width: 1600px) {
   .instagram {

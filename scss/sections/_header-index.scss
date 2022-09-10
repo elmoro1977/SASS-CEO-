@@ -47,7 +47,7 @@
     }
 }
 
-
+//segundo breackpoint 1020px
 @media (min-width: 1020px){
     .header {
         .navbar-expand-lg{
@@ -67,6 +67,7 @@
     }
 }
 
+//tercer breackpoint 1280px
 @media (min-width: 1280px) {
     .header{
         &__logo {
@@ -81,6 +82,7 @@
     }
 }
 
+//cuarto breackpoint 1600px
 @media (min-width: 1600px) {
     .header {
         a{
@@ -89,6 +91,7 @@
     }
 }
 
+// quinto breackpoint 1980px
 @media (min-width: 1980px) {
     .header {
         a{

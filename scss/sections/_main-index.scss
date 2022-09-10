@@ -76,6 +76,7 @@
   }
 }
 
+//  breackpoint 1020px
 @media (min-width: 1020px) {
   .main {
     &__container {
@@ -129,6 +130,7 @@
   }
 }
 
+// breackpoint 1280px
 @media (min-width: 1280px){
     .main {
         &__container {
@@ -173,9 +175,10 @@
             }
           }
         }
-      }
+  }
 }
 
+// breackpoint 1600px
 @media (min-width: 1600px){
     .main {
         &__container {
@@ -207,9 +210,9 @@
           }
         }
       }
-}
+   }
 
-
+// breackpoint 1980px
 @media (min-width: 1980px){
     .main {
         &__container {
@@ -256,4 +259,4 @@
           }
         }
       }
-}
+   }
